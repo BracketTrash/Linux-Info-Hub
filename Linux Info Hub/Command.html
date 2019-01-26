@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Linux Info Hub</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1 minimal-ui">
+        <meta property="og:image" content="src/gfx/iphone-new.png"/>
+        <meta property="og:site_name" content="Pure Drawer"/>
+        <meta property="og:title" content="Pure CSS transition effects for off-canvas views"/>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+        <link rel="stylesheet" href="src/css/app.css"/>
+        <link rel="stylesheet" href="src/css/style.css"/>
+        <script src="src/js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+
+        <div class="pure-container" data-effect="pure-effect-reveal">
+            <input type="checkbox" id="pure-toggle-left" class="pure-toggle" data-toggle="left"/>
+            <label class="pure-toggle-label" for="pure-toggle-left" data-toggle-label="left"><span class="pure-toggle-icon"></span></label>
+
+            <nav class="pure-drawer" data-position="left">
+                <div class="row collapse">
+                    <div class="large-12 columns">
+                        <ul class="nav-primary">
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="Development.html">Development</a></li>
+                             <li><a href="Distributions.html">Distributions</a></li>
+                             <li><a href="Professional.html">Professional Use</a></li>
+                             <li><a href="Future.html">Future Direction</a></li>
+                             <li><a href="Android.html">Android</a></li>
+                             <li><a href="unique.html">News</a></li>
+                             <li><a href="Command.html">Command Line</a></li>
+                             <li><a href="References.html">References</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pure-pusher-container">
+                <div class="pure-pusher">
+    <header class="header" data-stellar-background-ratio="0.5">
+        <div class="color-overlay">
+            <div class="row">
+                <div class="large-2 large-centered columns">
+                    <div class="logo">
+                        <img src="src/gfx/logo.png" alt="Pure Drawer"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            <h1 class="header">What is the command line?</h1>
+            <p class="Paragraph">
+                The command line is a method of navigating an operating system through commands issue by the keyboard.<br>
+                Though not strictly required in order to use linux, it is considered the fastest and most efficient way to install software and most guides for installing software on linux are written with use of the command line in mind.<br>
+                Linux isnt the only the os to use a command line, back when windows was called DOS it only offered the command line as a way to navigate the system and to this day windows can be navigated entirely in command line. It is is still so relevent and used that microsoft with windows 10 created a new command line interface called powershell. Mac os also has a command line that uses bash just like many linux distros which makes machines like the macbook a popular choice for developers.<br>
+                On this page we will go over basic navigation using the command line.<br>
+            </p>
+
+            <h1 class="header">Navigation</h1>
+            <h3 class="Header"> Current Location</h3>
+            <p class="intro">
+               1. user@bash: pwd (pwd stands for print working directory)<br>
+               2. /home/ryan (current location is the ryan folder in the home directory)<br>
+               3. user@bash</p>
+            <h3 class="Header">Seeing contents of current directory</h3>
+            <p class="intro">
+                1. user@bash: ls (lists the content of the directory)<br>
+                2. bin Documents public_html (content of the array)<br>
+                3. user@bash:<br>
+                4. user@bash: ls -l (gets a more detailed list of the directory)<br>
+                5. total 3 (amount of files in the directory)<br>
+                6. drwxr-xr-x  2 ryan users 4096 Mar 23 13:34 bin<br>
+                7. drwxr-xr-x 18 ryan users 4096 Feb 17 09:12 Documents<br>
+                8. drwxr-xr-x  2 ryan users 4096 May 05 17:25 public_html<br>
+            </p>
+            <h3 class="Header">Paths</h3>
+            <p class="intro">
+                1. ls /home/ryan/Documents (lets the user see a directory's content without navigating there)<br>
+                2. file1.txt file2.txt file3.txt<br>
+            </p>
+            <h3 class="Header">Changing Directory<h3>
+            <p class="intro">
+                1. user@bash: cd Documents (change to the documents directory)<br>
+                2. user@bash: ls (list current directory content)<br>
+                file1.txt file2.txt file3.txt (files in the documents directory)<br>
+                3. user@bash: cd / (slash brings the user to the root directory)<br>
+                4. user@bash: pwd (print the working directory)<br>
+                5. / (shows a slash representing root)<br>
+                6. user@bash: ls (list current directory content)<br>
+                7. bin boot dev etc home lib var (content of the rooot directory)<br>
+                8. ...<br>
+                9. user@bash: cd ~/Documents (change directory to Documents)<br>
+                10. pwd (print the working directory)<br>
+                11. /home/ryan/Documents (shows the current directory is the documents directory)<br>
+                12. cd ../.. (go back two directories)<br>
+                13. user@bash: pwd (priny working directory)<br>
+                14. /home (current directory)<br>
+                15. user@bash: cd<br>
+                16. user@bash: pwd<br>
+                17. /home/ryan (current directory is the user directory)<br>
+            </p>
+            <h3 class="Header">Commands</h3>
+            <p class="intro">
+                1. /etc (Stores config files for the system)<br>
+                2. /var/log (Stores log files for various system programs)<br>
+                3. /bin (The location of several commonly used programs (some of which we will learn about in the rest of this tutorial)<br>
+                4. /usr/bin (Another location for programs on the system)<br>
+                5. pwd (Print Working Directory - ie. Where are we currently)<br>
+                6. ls (List the contents of a directory)<br>
+                7. cd (Change Directories - ie. move to another directory)<br>
+                8. ~ (tilde) - This is a shortcut for your home directory<br>
+                9. . (dot) - This is a reference to your current directory<br>
+                10. .. (dotdot)- This is a reference to the parent directory<br>
+            </p>
+            <br>
+
+            <a href="References.html" data-scroll-goto="0" class="icon-browser button">Disclaimer</a>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+    </body>
+</html>
